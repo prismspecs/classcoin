@@ -1,16 +1,6 @@
-![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
+### Guide to Forking TurtleCoin
 
-#### Master Build Status
-![Build Status](https://github.com/turtlecoin/turtlecoin/workflows/Build/badge.svg?branch=master)
-
-#### Development Build Status
-![Build Status](https://github.com/turtlecoin/turtlecoin/workflows/Build/badge.svg?branch=development)
-
-### Installing
-
-We offer binary images of the latest releases here: http://latest.turtlecoin.lol
-
-If you would like to compile yourself, read on.
+https://turtlecoin.github.io/fork/
 
 ### How To Compile
 
@@ -41,8 +31,8 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/prismspecs/classcoin`
+- `cd classcoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -51,7 +41,7 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
+- `./ClassCoind --version`
 
 ##### Ubuntu, using Clang
 
@@ -163,25 +153,10 @@ For 32-bit:
 - `mkdir build`
 - `cd build`
 - `cmake -G "Visual Studio 16 2019" -A Win32 .. -DBOOST_ROOT=C:/local/boost_1_69_0`
-- `MSBuild TurtleCoin.sln /p:Configuration=Release /p:Platform=Win32 /m` 
+- `MSBuild TurtleCoin.sln /p:Configuration=Release /p:Platform=Win32 /m`
 
 The binaries will be in the `src/Release` folder when you are complete.
 
 - `cd src`
 - `cd Release`
 - `TurtleCoind.exe --version`
-
-#### Thanks
-Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community
-
-### Copypasta for license when editing files
-
-Hi TurtleCoin contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h](https://github.com/turtlecoin/turtlecoin/commit/28cfef2575f2d767f6e512f2a4017adbf44e610e) for an example.
-
-```
-// Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
-// Copyright (c) 2014-2018, The Monero Project
-// Copyright (c) 2018-2019, The TurtleCoin Developers
-//
-// Please see the included LICENSE file for more information.
-```
