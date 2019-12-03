@@ -303,18 +303,18 @@ Error validateAddresses(std::vector<std::string> addresses, const bool integrate
 {
     for (auto &address : addresses)
     {
-        /* Address is the wrong length */
-        if (address.length() != WalletConfig::standardAddressLength
-            && address.length() != WalletConfig::integratedAddressLength)
-        {
-            std::stringstream stream;
-
-            stream << "The address given is the wrong length. It should be " << WalletConfig::standardAddressLength
-                   << " chars or " << WalletConfig::integratedAddressLength << " chars, but "
-                   << "it is " << address.length() << " chars.";
-
-            return Error(ADDRESS_WRONG_LENGTH, stream.str());
-        }
+        // /* Address is the wrong length */
+        // if (address.length() != WalletConfig::standardAddressLength
+        //     && address.length() != WalletConfig::integratedAddressLength)
+        // {
+        //     std::stringstream stream;
+        //
+        //     stream << "The address given is the wrong length. It should be " << WalletConfig::standardAddressLength
+        //            << " chars or " << WalletConfig::integratedAddressLength << " chars, but "
+        //            << "it is " << address.length() << " chars.";
+        //
+        //     return Error(ADDRESS_WRONG_LENGTH, stream.str());
+        // }
 
         /* Address has the wrong prefix */
         if (address.substr(0, WalletConfig::addressPrefix.length()) != WalletConfig::addressPrefix)
