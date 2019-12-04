@@ -1,6 +1,9 @@
 ### Guide to Forking TurtleCoin
 
-https://turtlecoin.github.io/fork/
++ https://turtlecoin.github.io/fork/
++ https://github.com/turtlecoin/turtlecoin/issues/964
++ https://github.com/turtlecoin/turtlecoin/issues/963
++ https://github.com/turtlecoin/turtlecoin/issues/962
 
 ### How To Compile
 
