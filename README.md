@@ -113,7 +113,7 @@ The binaries will be in the `src` folder when you are complete.
 - `ln -s /usr/local/opt/llvm@8 /usr/local/opt/llvm`
 - `export CC=/usr/local/opt/llvm@8/bin/clang`
 - `export CXX=/usr/local/opt/llvm@8/bin/clang++`
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
+- `git clone -b master --single-branch https://github.com/prismspecs/classcoin.git
 - `cd turtlecoin`
 - `mkdir build`
 - `cd build`
